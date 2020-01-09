@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form action = "/logout">
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <input type="submit" value= "Logout"> </input>
+  </form>
+<table>
+<tr>
+  <th> <font face="verdana" color="green" size=2> Order</font> </th>
+  <th> <font face="verdana" color="green" size=2> User Id</font> </th>
+  <th> <font face="verdana" color="green" size=2> Status </font> </th>
+</tr>
+
+  {% for row in rows %}
+  <tr>
+    <td> {{ row[0] }}</td>
+    <td> {{ row[1] }}</td>
+    <td> {{ row[2] }}</td>
+  </tr> 
+  {% endfor %}
+
+</table>
+</body>
+</html>
+

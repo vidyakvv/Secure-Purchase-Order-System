@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title> 
+
+</title>
+<form action = "/logout">
+	<font face="verdana" color="green" size=6> Order Creation {{user}} </font>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<input type="submit" value= "Logout"> </input>
+</form>
+
+
+<form action = "/result" method = "POST"> 
+	<font face="verdana" color="blue" size=4>Please fill the order form: </font> <br> <br>
+		<label for="item"> Item </label>
+	<select name="item">
+		<option item="computer"> Computer </option>
+		<option item="phone"> Phone </option>
+		<option item="tablet"> Tablet </option>
+	</select>
+	<label for="numberofitems"> Number of items </label>
+	<input type="number" min=1 max=10 name="numberofitems"> 
+	<br></br>
+	Credit Card Number <input type="text" name="creditcard"> <br> <br>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
